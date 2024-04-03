@@ -8,8 +8,8 @@ const CoinKey = require("coinkey");
 
 //From seed to key
 //const HDKey = require("hdkey");
-// const HDKey = require("hdkey");
-import * as HDKey from "hdkey";
+const HDKey = require("hdkey");
+// import * as HDKey from "hdkey";
 import { IAddressObject } from "./types";
 
 //Could not declare Network as enum, something wrong with parcel bundler
