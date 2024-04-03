@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/ravenrebels/ravencoin-key#readme",
   "dependencies": {
-    "@hyperbitjs/chains": "^1.2.0",
-    "bip39": "^3.0.4",
+    "@hyperbitjs/chains": "git+https://github.com/AITTCOINCOMMINUTY/chains",
+    "bip39": "git+https://github.com/AITTCOINCOMMINUTY/bip39",
     "coinkey": "^3.0.0",
     "hdkey": "^2.0.1"
   },

@@ -12,15 +12,12 @@ import HDKey from "hdkey";
 import { IAddressObject } from "./types";
 
 //Could not declare Network as enum, something wrong with parcel bundler
-export type Network = "rvn" | "rvn-test" | "evr" | "evr-test";
+export type Network = "aitt";
 
 function getNetwork(name: Network) {
   const c = name.toLowerCase(); //Just to be sure
   const map = {
-    rvn: chains.rvn.mainnet.versions,
-    "rvn-test": chains.rvn.testnet?.versions,
-    evr: chains.evr.mainnet.versions,
-    "evr-test": chains.evr.testnet?.versions,
+    aitt: chains.aitt.mainnet.versions,
   };
 
   const network = map[c];
@@ -133,7 +130,7 @@ export function getAddressByWIF(network: Network, privateKeyWIF: string) {
 export const entropyToMnemonic = bip39.entropyToMnemonic;
 
 export function generateAddressObject(
-  network: Network = "rvn"
+  network: Network = "aitt"
 ): IAddressObject {
   const mnemonic = generateMnemonic();
   const account = 0;
@@ -156,7 +153,7 @@ export function generateAddressObject(
  * @param network
  * @returns
  */
-export function generateAddress(network: Network = "rvn") {
+export function generateAddress(network: Network = "aitt") {
   return generateAddressObject(network);
 }
 export default {
